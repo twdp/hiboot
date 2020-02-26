@@ -4,6 +4,11 @@
 app:
   project: examples-swagger
   name: simple-server
+  profiles:
+    include:
+      - logging
+      - swagger
+      - actuator
 
 logging:
   level: info

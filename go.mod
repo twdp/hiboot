@@ -9,7 +9,7 @@ require (
 	github.com/go-openapi/spec v0.19.2
 	github.com/go-openapi/swag v0.19.5 // indirect
 	github.com/gojektech/valkyrie v0.0.0-20190210220504-8f62c1e7ba45
-	github.com/golang/mock v1.2.0
+	github.com/golang/mock v1.4.0
 	github.com/golang/protobuf v1.2.0
 	github.com/gorilla/handlers v1.4.2
 	github.com/gorilla/mux v1.7.0
@@ -19,18 +19,18 @@ require (
 	github.com/iris-contrib/go.uuid v2.0.0+incompatible
 	github.com/iris-contrib/httpexpect v0.0.0-20180314041918-ebe99fcebbce
 	github.com/iris-contrib/middleware v0.0.0-20171114084220-1060fbb0ce08
-	github.com/kataras/golog v0.0.0-20180321173939-03be10146386
+	github.com/kataras/golog v0.0.10
 	github.com/kataras/iris v11.0.3+incompatible
-	github.com/kataras/pio v0.0.0-20180511174041-a9733b5b6b83
+	github.com/kataras/pio v0.0.2
 	github.com/moul/http2curl v1.0.0 // indirect
 	github.com/opentracing/opentracing-go v1.0.2
 	github.com/pkg/errors v0.8.0
 	github.com/rakyll/statik v0.1.6
-	github.com/sony/sonyflake v0.0.0-20160530021500-fa881fb1052b
+	github.com/sony/sonyflake v1.0.0
 	github.com/spf13/afero v1.1.2
 	github.com/spf13/cobra v0.0.5
 	github.com/spf13/pflag v1.0.3
-	github.com/stretchr/testify v1.3.0
+	github.com/stretchr/testify v1.5.1
 	github.com/uber-go/atomic v1.3.2 // indirect
 	github.com/uber/jaeger-client-go v2.15.0+incompatible
 	github.com/uber/jaeger-lib v1.5.0+incompatible // indirect
@@ -39,7 +39,7 @@ require (
 	golang.org/x/crypto v0.0.0-20190621222207-cc06ce4a13d4 // indirect
 	golang.org/x/net v0.0.0-20190613194153-d28f0bde5980
 	golang.org/x/sync v0.0.0-20190423024810-112230192c58 // indirect
-	google.golang.org/grpc v1.17.0
+	google.golang.org/grpc v1.27.1
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 	gopkg.in/go-playground/validator.v8 v8.18.2
 	gopkg.in/yaml.v2 v2.2.2
@@ -65,4 +65,7 @@ replace (
 	google.golang.org/appengine => github.com/golang/appengine v1.4.0
 	google.golang.org/genproto => github.com/google/go-genproto v0.0.0-20190215211957-bd968387e4aa
 	google.golang.org/grpc => github.com/grpc/grpc-go v1.14.0
+	hidevops.io/viper => github.com/hidevopsio/viper v1.3.2
 )
+
+go 1.13

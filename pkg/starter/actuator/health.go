@@ -16,7 +16,6 @@
 package actuator
 
 import (
-	"hidevops.io/hiboot/pkg/app"
 	"hidevops.io/hiboot/pkg/at"
 	"hidevops.io/hiboot/pkg/factory"
 )
@@ -40,9 +39,9 @@ type healthController struct {
 	configurableFactory factory.ConfigurableFactory
 }
 
-func init() {
-	app.Register(newHealthController)
-}
+//func init() {
+//	app.Register(newHealthController)
+//}
 
 func newHealthController(configurableFactory factory.ConfigurableFactory) *healthController {
 	return &healthController{configurableFactory: configurableFactory}

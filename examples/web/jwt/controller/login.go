@@ -16,6 +16,7 @@ package controller
 
 import (
 	"hidevops.io/hiboot/pkg/app"
+	"hidevops.io/hiboot/pkg/app/web/context"
 	"hidevops.io/hiboot/pkg/at"
 	"hidevops.io/hiboot/pkg/model"
 	"hidevops.io/hiboot/pkg/starter/jwt"
@@ -53,7 +54,7 @@ func newLoginController(token jwt.Token) *loginController {
 
 // Post /
 // The first word of method is the http method POST, the rest is the context mapping
-func (c *loginController) Post(request *userRequest) (response model.Response, err error) {
+func (c *loginController) Post(request *userRequest, ctx context.Context) (response model.Response, err error) {
 	jwtToken, _ := c.token.Generate(jwt.Map{
 		"username": request.Username,
 		"password": request.Password,

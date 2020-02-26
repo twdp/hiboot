@@ -18,6 +18,7 @@ package actuator
 import (
 	"hidevops.io/hiboot/pkg/app"
 	"hidevops.io/hiboot/pkg/at"
+	"hidevops.io/hiboot/pkg/factory"
 )
 
 const (
@@ -41,4 +42,8 @@ func newConfiguration(properties *properties) *configuration {
 
 func init() {
 	app.Register(newConfiguration, new(properties))
+}
+
+func (c *configuration) Health(configurableFactory factory.ConfigurableFactory)  *healthController {
+	return newHealthController(configurableFactory)
 }
